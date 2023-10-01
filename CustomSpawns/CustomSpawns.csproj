@@ -15,24 +15,23 @@
         <ModuleUrl>https://www.nexusmods.com/mountandblade2bannerlord/mods/411</ModuleUrl>
         <AssemblyName>$(ModuleId)</AssemblyName>
         <OverrideAssemblyName>false</OverrideAssemblyName>
-        <Version>1.9.5</Version>
+        <Version>1.9.6</Version>
     </PropertyGroup>
 
     <!-- Versions of Major Dependencies (For Package References & SubModule.xml Substitution) -->
     <PropertyGroup>
-        <BuildResourcesVersion>1.1.0.100</BuildResourcesVersion>
-        <HarmonyVersion>2.2.2</HarmonyVersion>
+        <BuildResourcesVersion>1.1.0.104</BuildResourcesVersion>
+        <HarmonyLibVersion>2.2.2</HarmonyLibVersion>
+        <HarmonyVersion>v2.2.2.162</HarmonyVersion>
     </PropertyGroup>
 
     <!-- NuGet Packages -->
     <ItemGroup>
         <PackageReference Include="Bannerlord.BuildResources" Version="$(BuildResourcesVersion)" PrivateAssets="All" />
-        <PackageReference Include="Bannerlord.Lib.Harmony" Version="$(HarmonyVersion)" PrivateAssets="All" />
-        <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*" PrivateAssets="All" />
-        <PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="$(GameVersion).*" PrivateAssets="All" />
-        <PackageReference Include="Bannerlord.ReferenceAssemblies.StoryMode" Version="$(GameVersion).*" PrivateAssets="All" />
-        <PackageReference Include="Bannerlord.ReferenceAssemblies.Sandbox" Version="$(GameVersion).*" PrivateAssets="All" />
+        <PackageReference Include="Bannerlord.Lib.Harmony" Version="$(HarmonyLibVersion)" PrivateAssets="All" />
+        <PackageReference Include="Bannerlord.ReferenceAssemblies.Core" Version="$(GameVersion).*-*" PrivateAssets="All" />
+        <PackageReference Include="Bannerlord.ReferenceAssemblies.Sandbox" Version="$(GameVersion).*-*" PrivateAssets="All" />
+        <PackageReference Include="Bannerlord.ReferenceAssemblies.Native" Version="$(GameVersion).*-*" PrivateAssets="All" />
         <PackageReference Include="BUTR.MessageBoxPInvoke" Version="1.0.0.1" />
     </ItemGroup>
-
 </Project>

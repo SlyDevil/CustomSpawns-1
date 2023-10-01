@@ -9,11 +9,13 @@
   <ModuleType value="Community" />
   <Url value="$moduleurl$" />
   <DependedModules>
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="$harmonyversion$" Optional="false"/>
     <DependedModule Id="Native" DependentVersion="$gameversion$" Optional="false"/>
     <DependedModule Id="SandBoxCore" DependentVersion="$gameversion$" Optional="false"/>
     <DependedModule Id="Sandbox" DependentVersion="$gameversion$" Optional="false"/>
   </DependedModules>
   <DependedModuleMetadatas>
+    <DependedModule Id="Bannerlord.Harmony" DependentVersion="$harmonyversion$"/>
     <DependedModuleMetadata id="Native" order="LoadBeforeThis" version="$gameversion$.*"/>
     <DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="$gameversion$.*"/>
     <DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="$gameversion$.*"/>
